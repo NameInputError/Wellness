@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ListPreference 
+        android:key="pref_foodpref"
+        android:title="@string/foodpref_title"
+        android:summary="@string/foodpref_summary"
+        android:dialogTitle="@string/foodpref_title"
+        android:entries="@array/foodpref_keys"
+        android:entryValues="@array/foodpref_values"
+        android:defaultValue="@string/foodpref_default"
+        />
+    <EditTextPreference 
+        android:key="calorie_target"
+        android:inputType="number"
+        android:title="@string/cal_target"
+        android:dialogTitle="@string/cal_target"
+        android:summary="@string/calorie_summary"
+        android:defaultValue="2000"
+        />
+
+</PreferenceScreen>

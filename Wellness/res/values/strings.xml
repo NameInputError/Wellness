@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wellness</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="dateLabel">Date:</string>
+    <string name="timeLabel">Time:</string>
+    <string name="eatenLabel">Eaten:</string>
+    <string name="caloriesLabel">Calories:</string>
+    <string name="foodGroupLabel">Food Group:</string>
+    <string name="saveButtonLabel">Save</string>
+    <string name="cal_target">Calorie Target</string>
+    <string name="menu_foodsummary">Today\'s Food</string>
+    <string name="return_from_summary">Return</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_food_summary">Food Summary</string>
+    <string-array name="foodgroups">
+        <item>Fruit</item>
+        <item>Vegetables</item>
+        <item>Grains</item>
+        <item>Meats</item>
+        <item>Fish</item>
+        <item>Other Protein</item>
+        <item>Dairy</item>
+        <item>Fats</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="foodvegetarian">
+        <item>Fruit</item>
+        <item>Vegetables</item>
+        <item>Grains</item>
+        <item>Fish</item>
+        <item>Dairy</item>
+        <item>Fats</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="foodvegan">
+        <item>Fruit</item>
+        <item>Vegetables</item>
+        <item>Grains</item>
+        <item>Fats</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="foodpreflist">
+        <item>Omnivore</item>
+        <item>Vegetarian</item>
+        <item>Vegan</item>
+    </string-array>
+    <string name="foodpref_title">Food Preferences</string>
+    <string name="foodpref_summary">Set Food Preference options</string>
+    <string name="calorie_summary">Set Calorie Target</string>
+    <string-array name="foodpref_keys">
+        <item>Omnivore</item>
+        <item>Vegetarian</item>'
+        <item>Vegan</item>
+    </string-array>
+    <string-array name="foodpref_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string name="foodpref_default">0</string>
+
+</resources>

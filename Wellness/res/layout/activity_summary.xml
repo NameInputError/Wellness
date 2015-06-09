@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/foodTable" >
+	<TableRow
+	    android:id="@+id/tableTitle"
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal" >
+    	
+	    <TextView 
+	        android:id="@+id/textViewTitle"
+	        android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_span="4"
+    		android:gravity="center"
+    		android:text="Food Summary"
+    		android:textStyle="bold">
+    	</TextView>
+	  </TableRow>
+	  
+	 <TableRow
+	    android:id="@+id/tableHeadings"
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content" >
+    	
+	    <TextView 
+	        android:id="@+id/textViewMonth"
+	        android:layout_weight="1"
+    		android:gravity="center"
+    		android:text="Food"
+    		android:textStyle="bold">
+    	</TextView>
+    	
+	    <TextView 
+	        android:id="@+id/textViewBBal"
+	        android:layout_weight="1"
+    		android:gravity="center"
+    		android:text="Calories"
+    		android:textStyle="bold">
+    	</TextView>
+    	
+    	
+	  </TableRow>
+	 
+    
+</TableLayout>

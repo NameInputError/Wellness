@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tryan.wellness.WellnessActivity" >
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dateEditText"
+        android:text="@string/dateLabel"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/timeTimePicker"
+        android:text="@string/timeLabel"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/eatenTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/timeTextView"
+        android:layout_below="@+id/timeTimePicker"
+        android:layout_marginTop="16dp"
+        android:text="@string/eatenLabel" />
+
+    <TextView
+        android:id="@+id/caloriesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/eatenEditText"
+        android:layout_marginTop="32dp"
+        android:text="@string/caloriesLabel"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/caloriesEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/caloriesTextView"
+        android:layout_alignBottom="@+id/caloriesTextView"
+        android:layout_alignLeft="@+id/eatenEditText"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/dateEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/caloriesTextView"
+        android:ems="10"
+        android:inputType="date" >
+        
+        <requestFocus />
+    </EditText>
+
+    <TimePicker
+        android:id="@+id/timeTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dateEditText"
+        android:layout_below="@+id/dateEditText" />
+
+    <EditText
+        android:id="@+id/eatenEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/eatenTextView"
+        android:layout_alignLeft="@+id/timeTimePicker"
+        android:ems="10" >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/foodGroupTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/foodGroupSpinner"
+        android:layout_toLeftOf="@+id/foodGroupSpinner"
+        android:text="@string/foodGroupLabel" />
+
+    <Spinner
+        android:id="@+id/foodGroupSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/caloriesEditText"
+        android:layout_below="@+id/caloriesEditText"
+        android:layout_marginTop="22dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodGroupSpinner"
+        android:layout_toRightOf="@+id/foodGroupTextView"
+        android:text="@string/saveButtonLabel" />
+
+</RelativeLayout>
